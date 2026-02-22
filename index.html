@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+  <main id="logform">
+    <div class="container">
+        <form class="py-5">
+            <h1>Login Form:</h1>
+
+            <div class="form-group">
+                <label>User Email</label>
+                <input type="email" class="form-control" id="useremail">
+            </div>
+
+            <div class="form-group my-5">
+                <label>User Password</label>
+                <input type="password" class="form-control" id="userpass">
+            </div>
+
+            <button id="logbtn" class="btn btn-primary">Login</button>
+        </form>
+
+        <div id="errMess" class="alert alert-danger p-2 d-none">Invalid Email Or Password</div>
+        <div id="succMess" class="alert alert-success p-2 d-none">Login Successfully</div>
+    </div>
+</main>
+
+<section id="quizSection" class="d-none">
+    <div class="container">
+        <h1>Let's do a quiz</h1>
+
+        
+
+        <form id="quizForm" class="my-5">
+            <div class="form-group">
+                <label>Enter Number of Questions:</label>
+                <input type="number" id="num" class="form-control" placeholder="Number of questions">
+            </div>
+
+            <button type="submit" id="startQuizBtn" class="btn btn-primary my-4">Start Quiz</button>
+
+            <div id="quiz"></div>
+
+            <button id="submitAnswer" class="btn btn-primary mt-3 d-none">Submit Answers</button>
+
+            <h3 id="result" class="mt-4"></h3>
+        </form>
+
+        <button id="logoutBtn" class="btn btn-primary mb-3">Log out</button>
+    </div>
+</section>
+
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
